@@ -34,16 +34,16 @@ class FirstViewModel(private val useCase: ListOfFilmsUseCase) : ViewModel() {
             }
         )
 
-    private fun funnnyFun() {
-        Observable.just("string", "superString", "megaString")
-            .subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread())
-            .flatMap {
-                Observable.just(it + "5", it + "6")
-            }
-            .subscribe() {
-                Log.d("FILM", it)
-            }
-    }
+//    private fun funnnyFun() {
+//        Observable.just("string", "superString", "megaString")
+//            .subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread())
+//            .flatMap {
+//                Observable.just(it + "5", it + "6")
+//            }
+//            .subscribe() {
+//                Log.d("FILM", it)
+//            }
+//    }
 
     override fun onCleared() {
         super.onCleared()
