@@ -18,10 +18,3 @@ data class FilmModel(
     val url: String,
 )
 
-fun FilmModel.toFilm() = Film(
-    id = this.id,
-    title = this.original_title_romanised,
-    description = this.description,
-    image = this.image
-)
-

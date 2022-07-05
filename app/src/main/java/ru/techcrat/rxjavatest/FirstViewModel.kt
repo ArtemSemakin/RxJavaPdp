@@ -1,16 +1,11 @@
 package ru.techcrat.rxjavatest
 
-import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
-import io.reactivex.observers.DisposableCompletableObserver
 import io.reactivex.schedulers.Schedulers
 import ru.techcrat.rxjavatest.models.Film
-import ru.techcrat.rxjavatest.networkModels.FilmModel
-import ru.techcrat.rxjavatest.networkModels.toFilm
 import ru.techcrat.rxjavatest.usecases.ListOfFilmsUseCase
 
 class FirstViewModel(private val useCase: ListOfFilmsUseCase) : ViewModel() {
